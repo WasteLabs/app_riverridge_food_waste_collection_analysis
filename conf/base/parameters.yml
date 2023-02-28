@@ -37,7 +37,6 @@ dashboards:
         drop_arg:
           - sepal_length
 
-
     iris_aggregation:
       agg_params:
         - mean
