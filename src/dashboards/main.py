@@ -270,6 +270,10 @@ summary_data_filtered = filter_dataframe.filter_dataframe(
     base=sidebar,
 )
 
+if summary_data_filtered.empty:
+    st.warning("No data to display. Please change your filter.")
+    st.stop()
+
 (
     filtered_assigned_stops,
     filtered_unassigned_stops,
