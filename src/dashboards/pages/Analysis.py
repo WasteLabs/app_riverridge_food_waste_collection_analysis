@@ -5,9 +5,9 @@ import plotly.express as px
 import streamlit as st
 
 from kedro.framework.startup import bootstrap_project
-from dashboards.utils.check_password import check_password
-from dashboards.utils.filters import filter_dataframe
-from dashboards.utils.generate_map import generate_map
+from src.dashboards.utils.check_password import check_password
+from src.dashboards.utils.filters import filter_dataframe
+from src.dashboards.utils.generate_map import generate_map
 import streamlit.components.v1 as components
 
 
@@ -29,7 +29,6 @@ import streamlit as st  # noqa: I201
 from src.dashboards.utils.check_password import check_password
 from pandas.api.types import CategoricalDtype
 from src.dashboards import config  # noqa: I100,I201,E402
-from src.dashboards import decorators  # noqa: I100,I201,E402
 from src.dashboards import decorators  # noqa: I100,I201,E402
 from src.dashboards.shared import io
 

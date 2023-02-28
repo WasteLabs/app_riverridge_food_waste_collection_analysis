@@ -5,7 +5,7 @@ from kedro.framework.startup import bootstrap_project
 import streamlit as st  # noqa: I201
 from streamlit.runtime.secrets import AttrDict
 import yaml
-from dashboards.utils.check_password import check_password
+from src.dashboards.utils.check_password import check_password
 
 st.set_page_config(
     page_title="RiverRidge food waste collection analysis",
